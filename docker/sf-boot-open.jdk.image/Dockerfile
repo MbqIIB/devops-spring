@@ -6,7 +6,7 @@ ADD https://raw.githubusercontent.com/santosh32/devops-spring/master/sf-boot/sf-
 
 EXPOSE 8080
 
-CMD ["java" "-jar" "sf-boot-web-app.war"]
+CMD ["java", "-jar", "sf-boot-web-app.war"]
 
 # docker build -t sf-boot-jdk.image .
 # docker run -d --name sf-boot-war -p 8080:8080 sf-boot-jdk.image
