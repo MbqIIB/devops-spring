@@ -3,7 +3,8 @@ MAINTAINER docker@devops.com
 
 WORKDIR /spring-boot-app
 
-COPY https://github.com/santosh32/devops-spring/blob/master/sf-boot/sf-boot-web-app/target/sf-boot-webapp.war ${WORKDIR}
+# replace below url with nexus or artifacts repository to get full blown integration.
+COPY https://github.com/santosh32/devops-spring/blob/master/sf-boot/sf-boot-web-app/target/sf-boot-web-app.war ${WORKDIR}
 
 EXPOSE 8080
 
