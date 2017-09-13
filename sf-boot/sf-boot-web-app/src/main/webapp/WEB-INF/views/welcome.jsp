@@ -1,6 +1,5 @@
+<h2>SpringBoot Web Application</h2>
 <html>
-	<head>
-	<title>HelloWorld page</title>
-	</head>
-	<body>Greeting : ${greeting}</body>
+<body>Message : spring-boot war running on Docker
+</body>
 </html>
