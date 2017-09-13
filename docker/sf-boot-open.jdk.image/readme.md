@@ -1,17 +1,22 @@
+-- Build and Run Docker Container using Dockerfile
+--
 - docker build -t sf-boot-jdk.image .
 - docker run -d --name sf-boot-war -p 8080:8080 sf-boot-jdk.image
 - docker logs sf-boot-war
 - docker exec -it sf-boot-war bash
 - docker inspect sf-boot-war
-
+----------------------------------------------------------------------
+-- Access Spring boot application
+--
 - http://192.168.33.10:8080/
 
-
+----------------------------------------------------------------------
+-- Build and Run Docker Container using Docker compose
+--
 - docker-compose up -d
 - docker-compose scale sf-boot-scale=3
 
-- docker-compose up
-
+----------------------------------------------------------------------
 - docker swarm init
 - docker stack deploy --compose-file=docker-compose.yml sf-boot-scale
 
