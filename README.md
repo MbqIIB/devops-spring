@@ -1,10 +1,11 @@
 Build and Run Docker Container using Dockerfile
 --
-- docker build -t sf-boot-jdk.image .
-- docker run -d --name sf-boot-war -p 8080:8080 sf-boot-jdk.image
-- docker logs sf-boot-war
-- docker exec -it sf-boot-war bash
-- docker inspect sf-boot-war
+- goto devops-spring/docker/sf-boot-open.jdk.image/ and run below commands 
+  - docker build -t sf-boot-jdk.image .
+  - docker run -d --name sf-boot-war -p 8080:8080 sf-boot-jdk.image
+  - docker logs sf-boot-war
+  - docker exec -it sf-boot-war bash
+  - docker inspect sf-boot-war
 
 Access Spring boot application
 --
