@@ -1,6 +1,7 @@
 Build and Run Docker Container using Dockerfile
 --
-- goto devops-spring/docker/sf-boot-open.jdk.image/ and run below commands 
+- Goto devops-spring/docker/sf-boot-open.jdk.image/ path and run below commands 
+  
   - docker build -t sf-boot-jdk.image .
   - docker run -d --name sf-boot-war -p 8080:8080 sf-boot-jdk.image
   - docker logs sf-boot-war
