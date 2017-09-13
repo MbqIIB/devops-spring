@@ -8,6 +8,7 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 
 # docker build -t sf-boot-tomcat.image .
-# docker run sf-boot-tomcat.image
+# docker run -d --name sf-boot-war -p 8080:8080 sf-boot-tomcat.image
+# docker logs sf-boot-war
 
 
